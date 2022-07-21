@@ -1,0 +1,332 @@
+GET /login_api_360.php?qid=126963832&server_id=S313&time=1651906106&sign=c0d668047919adb3ccc9a665035a51d3&isAdult=1 HTTP/1.1
+Accept: image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, */*
+Referer: http://sxd.wan.360.cn/game_login.php?server_id=S313
+Accept-Language: zh-CN
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3)
+Host: s313.sxd.g.1360.com
+Connection: Keep-Alive
+Cookie: user=LlYj_pndJjQLJU4; _hash=5ba0de05e23a024330c74a193160e642; _time=1651905996
+
+HTTP/1.1 302 Moved Temporarily
+Date: Sat, 07 May 2022 06:48:26 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+P3P: CP=CAO PSA OUR
+Set-Cookie: user=t-WGQPk9Edj-1Lu; expires=Sun, 08-May-2022 06:48:26 GMT
+Set-Cookie: source=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT
+Set-Cookie: regdate=0
+Set-Cookie: non_kid=1
+Set-Cookie: idcard=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT
+Set-Cookie: login_time_sxd_xxxxxxxx=1651906106; path=/
+Set-Cookie: login_hash_sxd_xxxxxxxx=af5e5b11381f320326a8567c682192e7; path=/
+Set-Cookie: _time=1651906106; expires=Sun, 08-May-2022 06:48:26 GMT; path=/
+Set-Cookie: _hash=64f8f5b4b83276617c3fa1dc366c915e; expires=Sun, 08-May-2022 06:48:26 GMT; path=/
+Location: /
+
+GET / HTTP/1.1
+Accept: image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, */*
+Referer: http://sxd.wan.360.cn/game_login.php?server_id=S313
+Accept-Language: zh-CN
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3)
+Host: s313.sxd.g.1360.com
+Connection: Keep-Alive
+If-Modified-Since: Sat, 07 May 2022 06:46:36 GMT
+Cookie: user=t-WGQPk9Edj-1Lu; _hash=64f8f5b4b83276617c3fa1dc366c915e; _time=1651906106; regdate=0; non_kid=1; login_time_sxd_xxxxxxxx=1651906106; login_hash_sxd_xxxxxxxx=af5e5b11381f320326a8567c682192e7
+
+HTTP/1.1 200 OK
+Date: Sat, 07 May 2022 06:48:27 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Vary: Accept-Encoding
+Expires: Mon, 26 Jul 1970 05:00:00 GMT
+Last-Modified: Sat, 07 May 2022 06:48:27 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>360......313...-.........</title>
+    <link rel="shortcut icon" type="image/ico" href="http://uri.xdcdn.net/sxd/load/base/public/favicon.ico">
+    <style type="text/css">html, body { background:#000; padding:0; margin:0; width:100%; height:100%; text-align:center; overflow:hidden;}    #webgame {
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+    }
+    #baidu_back, #baidu {
+        position:absolute;
+        left:0;
+        right:0;
+        width:0;
+        height:0;
+        border:0;
+        background:#fff;
+        text-align:center;
+    }
+    #baidu input {
+        border:0;
+        margin-top: 180px;
+        margin-left: -78px;
+        width: 414px;
+        height: 25px;
+        font-size:11pt;
+    }
+    </style>
+</head>
+<body><script type="text/javascript" src="http://uri.xdcdn.net/sxd/load/base/public/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+
+var Halo = {
+    swfObject : function () {
+        if (navigator.appName.indexOf("Microsoft") != -1) {
+            return window['sxd'];
+        } else {
+            return document['sxd'];
+        }
+    }
+};
+
+function tongji (action) {
+    document.getElementById('tj').src='http://uri.xdcdn.net/sxd/load/tongji_v1/tongji/tj.html?ga=' + action;
+}
+
+function addToFavorite () {
+    var title = '.........';
+    var url = 'http://sxd.wan.360.cn';
+
+    if (window.sidebar) {
+        window.sidebar.addPanel(title, url, "");
+    } else if( document.all ) {
+        window.external.AddFavorite(url, title);
+    } else if( window.opera && window.print) {
+        return true;
+    }
+}
+var baiduVisible = false;
+function changeTitle () { }
+function switchToBaiDu () { }
+// ..................
+var isFirst = false;
+function firstLogin (first) {
+    isFirst = first;
+}
+window.onload = function () {
+    setTimeout(
+        function () {
+            try {
+                Halo.swfObject().focus();
+            }
+            catch (e) {
+                return false;
+            }
+        },
+        1000
+    );
+};
+window.onbeforeunload = function () {
+    if (isFirst) {
+        try {
+            addToFavorite();
+        }catch (e) {
+            return false;
+        }
+    }
+
+    var browser = navigator.appName;
+    var showinfo='';
+    showinfo = Halo.swfObject().web_close();
+    if (showinfo !='') {
+        if (browser == "Netscape") {
+                return showinfo;
+        }else {
+                window.event.returnValue = showinfo;
+        }
+    }
+};</script>
+    <iframe src="about:blank" id="baidu_back" frameborder="0"></iframe>
+    <iframe src="about:blank" id="tj" frameborder="0"  style="display:none"></iframe>
+    <div id="baidu"></div>    <div id="webgame"><a href="http://get.adobe.com/flashplayer/" target="_blank" style="color:#ffffff;">.........Flash Player</a></div>
+    <script type="text/javascript">
+    //var swf = 'http://sxd.cdn.do.cx/trunk/client/Index.swf';
+    //var swf = 'http://uri.xdcdn.net/sxd/load/2013040901-r47/game/Index.swf';
+    //var swf = 'http://uri.xdcdn.net/sxd/file/23554f4ee6d1c50fb0acf7c1f6d1f7e10e09ba42/Index.swf';
+    var swf = "http://uri.xdcdn.net/sxd/load/2016052601-r127-02/game/Index.swf";
+
+    var flashVars
+        = "server_name=s313.sxd.g.1360.com"
+        + "&player_name=126963832"
+        + "&hash_code=58a42ff769f1c28143735c440aab2485"
+        + "&time=1651906107"
+        + "&assets_rnd=0"
+    + "&small_game_version=1"
+    + "&ip=9x211.sxdweb.xd.com"
+    + "&port=8358"
+    + "&server_id=360_s313"
+    + "&server_url=http%3A%2F%2F9x211.sxdweb.xd.com%2F360_s313%2F"
+    + "&client_url=http%3A%2F%2Furi.xdcdn.net%2Fsxd%2F"
+    + "&website=http%3A%2F%2Fsxd.wan.360.cn"
+    + "&bbs=http%3A%2F%2Fbbs.360safe.com%2Fforum-324-1.html"
+    + "&recharge=http%3A%2F%2Fsxd.wan.360.cn%2Fpay.php%3Fqid%3D126963832%26server_id%3DS313"
+    + "&bug=http%3A%2F%2Fapi.sxd.xd.com%2Fapi%2Fpostbug.php"
+    + "&bug_list_url=http%3A%2F%2Fapi.sxd.xd.com%2Fapi%2Fbug.php"
+    + "&code=http%3A%2F%2Fapi.sxd.xd.com%2Fapi%2Fcode.php"
+    + "&vip_info=http%3A%2F%2Fbbs.360safe.com%2Fthread-488822-1-1.html"
+    + "&source="
+    + "&regdate=0"
+    + "&non_kid=1"
+    + "&id_card="
+    + "&pi="
+    + "&baidu=0"
+    + "&prevent_url=http%3A%2F%2Fwan.360.cn%2Ffcm"
+    + "&oss_url=http%3A%2F%2Fsxd-voice.xdcdn.net%2F"
+    + "&upload_url=http%3A%2F%2Fapi-music.sxd.xd.com%2Fget_policy.php"
+    + "&mangguo=0"
+    + "&platform_b=0"
+    + "&sogou=0"
+    + "&gm_url="
+    + "&vip_hidden=0"
+    + "&open_time=1501808400"
+    + "&nickname_suffix="
+    + "&bug_feedback_url=http%3A%2F%2Fapi.sxd.xd.com%2Fapi%2Fbugpj.php"
+    + "&world_war_server_url=http%3A%2F%2F8x086.xd.com%2Fworld_war%2F"
+    + "&new_world_war_server_url=http%3A%2F%2F9x203.sxdweb.xd.com%2Fnew_server_world_war%2F"
+    + "&st_world_twin_dragons_url=http%3A%2F%2F9x050.sxdweb.xd.com%2Fst_world_twin_dragons%2F"
+    + "&st_top_twin_dragons_url=http%3A%2F%2F9x050.sxdweb.xd.com%2Fst_top_twin_dragons%2F"
+    + "&world_st_union_sixvisx_url=http%3A%2F%2F4x160.xd.com%2Fwsus%2F"
+    + "&st_arena_cup_server_url=http%3A%2F%2F9x226.sxdweb.xd.com%2Fst_arena_cup_race%2F"
+    + "&world_sky_lantern_bless_url=http%3A%2F%2F9x237.sxdweb.xd.com%2Fworld_sky_lantern_bless%2F"
+    + "&groupon_info_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&call_of_boss_url=http%3A%2F%2F9x334.sxdweb.xd.com%2Fcall_of_boss%2F"
+    + "&shen_gun=http%3A%2F%2F9x334.sxdweb.xd.com%2Fcall_of_boss%2F"
+    + "&jump_one_jump_url=http%3A%2F%2F9x334.sxdweb.xd.com%2Fcall_of_boss%2F"
+    + "&five_deploy_ranking_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&bai_lian_qian_kun_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&world_pk_ranking_url=http%3A%2F%2F9x226.sxdweb.xd.com%2Fworld_pk_ranking%2F"
+    + "&world_faction_war_url=http%3A%2F%2F4x160.xd.com%2Fwfw_s3%2F"
+    + "&twin_dragons_war_url=http%3A%2F%2F9x050.sxdweb.xd.com%2Fwtd%2F"
+    + "&world_top_war_war_server_url=http%3A%2F%2F4x160.xd.com%2Fwntw%2F"
+    + "&gwr=http%3A%2F%2F9x346.sxdweb.xd.com%2Fgod_war%2F"
+    + "&god_war_war_report_url=http%3A%2F%2F9x346.sxdweb.xd.com%2Fgod_war%2F"
+    + "&god_war_worsh_url=http%3A%2F%2F9x346.sxdweb.xd.com%2Fgod_war%2F"
+    + "&player_npc_url=http%3A%2F%2F9x333.sxdweb.xd.com%2Fs0_groupon%2F"
+    + "&top_lineup_ranking_url=http%3A%2F%2F9x243.sxdweb.xd.com%2Fsuper_deploy%2F"
+    + "&st_matches_cup_war_report_url=http%3A%2F%2F9x314.sxdweb.xd.com%2Fst_matches_cup%2F"
+    + "&shui_lu_da_hui_url=http%3A%2F%2F9x292.sxdweb.xd.com%2Fshui_lu_da_hui%2F"
+    + "&war_zone_rank_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&sa_world_tower_rank_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&st_practice_field=http%3A%2F%2F9x334.sxdweb.xd.com%2Fcall_of_boss%2F"
+    + "&team_platform_race_url1=http%3A%2F%2F9x269.sxdweb.xd.com%2Fdevil_expedition_team_7%2F"
+    + "&team_platform_race_url2=http%3A%2F%2F9x321.sxdweb.xd.com%2Fdevil_expedition_team_8%2F"
+    + "&team_platform_race_url3=http%3A%2F%2F9x236.sxdweb.xd.com%2Fdevil_expedition_team_9%2F"
+    + "&team_platform_race_url4=http%3A%2F%2F9x338.sxdweb.xd.com%2Fdevil_expedition_team_10%2F"
+    + "&human_world_boss_fight_ranking_url1=http%3A%2F%2F9x374.sxdweb.xd.com%2Fthree_world_field_1%2F"
+    + "&human_world_boss_fight_ranking_url2=http%3A%2F%2F9x375.sxdweb.xd.com%2Fthree_world_field_2%2F"
+    + "&human_world_boss_fight_ranking_url3=http%3A%2F%2F9x376.sxdweb.xd.com%2Fthree_world_field_3%2F"
+    + "&human_world_boss_fight_ranking_url4=http%3A%2F%2F9x377.sxdweb.xd.com%2Fthree_world_field_4%2F"
+    + "&human_world_boss_fight_ranking_url5=http%3A%2F%2F9x378.sxdweb.xd.com%2Fthree_world_field_5%2F"
+    + "&human_world_boss_fight_ranking_url6=http%3A%2F%2F9x379.sxdweb.xd.com%2Fthree_world_field_6%2F"
+    + "&human_world_boss_fight_ranking_url7=http%3A%2F%2F9x374.sxdweb.xd.com%2Fthree_world_field_7%2F"
+    + "&human_world_boss_fight_ranking_url_s0=http%3A%2F%2F9x050.sxdweb.xd.com%2Fs0_three_world_field_7%2F"
+    + "&sect_server_url1=http%3A%2F%2F9x369.sxdweb.xd.com%2Fsect_1%2F"
+    + "&sect_server_url2=http%3A%2F%2F9x365.sxdweb.xd.com%2Fsect_2%2F"
+    + "&sect_server_url3=http%3A%2F%2F9x374.sxdweb.xd.com%2Fsect_3%2F"
+    + "&sect_server_url4=http%3A%2F%2F9x378.sxdweb.xd.com%2Fsect_4%2F"
+    + "&best_partner_ranking_url=http%3A%2F%2F9x287.sxdweb.xd.com%2Fbest_partner%2F"
+    + "&build_high_building_ranking_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&land_contract_ranking_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&team_pk_ranking_url=http%3A%2F%2F9x275.sxdweb.xd.com%2Fteam_pk%2F"
+    + "&team_pk_war_report_url=http%3A%2F%2F9x275.sxdweb.xd.com%2Fteam_pk%2F"
+    + "&link_kill_monster_ranking_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&sect_war_ranking_url=http%3A%2F%2F9x201.sxdweb.xd.com%2Fsect_war_srv%2F"
+    + "&best_partner_war_report_url=http%3A%2F%2F9x287.sxdweb.xd.com%2Fbest_partner%2F"
+    + "&world_race_rank_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&world_rank_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&anniversary_rank_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&big_ring_url=http%3A%2F%2F9x334.sxdweb.xd.com%2Fcall_of_boss%2F"
+    + "&new_server_inherit_publish_url=http%3A%2F%2F9x320.sxdweb.xd.com%2Fgroupon%2F"
+    + "&bu_si_feng_huang_url=http%3A%2F%2F8x087.xd.com%2Fs0%2Fwar.php%3Fc%3D%26r%3D19220212%26v%3D2017091401%26s%3Dhttp%253A%252F%252F8x087%252Exd%252Ecom%252Fs0%252F%26m%3D0%26dif%3Dr160%26w%3DSuperSportWar%26is%255Fgit%3D1"
+    + "&bind_phone_url=http%3A%2F%2Fmtool-sxd.xd.com%2Fv1%2Fusers%2F"
+    + "&bind_phone_open=1"
+    + "&server_chat_room_rank_url=http%3A%2F%2F9x305.sxdweb.xd.com%2Fserver_chat_room_rank%2F"
+    + "&weibo_nickname="
+    + "&weibo_gender="
+    + "&is_combined=0"
+    + "&is_newst=0"
+    + "&is_git=1"
+    + "&index_url=http%3A%2F%2Furi.xdcdn.net%2Fsxd%2Findex%2F"
+    + "&index_urls=%7B%222013080301%22%3A%222013080301-r55-02%22%2C%222013081701%22%3A%222013081701%22%7D"
+    + "&diff_url=http%3A%2F%2Furi.xdcdn.net%2Fsxd%2Fdiff%2F"
+    + "&diff_urls=%7B%222016030401%22%3A%22r121-03%22%2C%222016031701%22%3A%22r122%22%2C%222016031801%22%3A%22r122-03%22%2C%222016033101%22%3A%22r123%22%2C%222016040101%22%3A%22r123-04%22%2C%222016041401%22%3A%22r124-04%22%2C%222016041501%22%3A%22r124-04%22%2C%222016042801%22%3A%22r125-01%22%2C%222016042901%22%3A%22r125-09%22%2C%222016051201%22%3A%22r126-02%22%2C%222016051301%22%3A%22r126-10%22%2C%222016052601%22%3A%22r127-03%22%2C%222016052701%22%3A%22r127-04%22%2C%222016060801%22%3A%22r128-03%22%2C%222016060901%22%3A%22r128-03%22%2C%222016062201%22%3A%22r129-02%22%2C%222016062301%22%3A%22r129-06%22%2C%222016070801%22%3A%22r130-02%22%2C%222016070901%22%3A%22r130-06%22%2C%222016072101%22%3A%22r131-02%22%2C%222016072201%22%3A%22r131-20%22%2C%222016080501%22%3A%22r132-05%22%2C%222016080601%22%3A%22r132-03%22%2C%222016081801%22%3A%22r133-02%22%2C%222016081901%22%3A%22r133-08%22%2C%222016090201%22%3A%22r134-01%22%2C%222016090301%22%3A%22r134-07%22%2C%222016091401%22%3A%22r135-01%22%2C%222016091801%22%3A%22r135-05%22%2C%222016092901%22%3A%22r136-02%22%2C%222016093001%22%3A%22r136-07%22%2C%222016101301%22%3A%22r137%22%2C%222016101401%22%3A%22r137-07%22%2C%222016102701%22%3A%22r138-02%22%2C%222016102801%22%3A%22r138-11%22%2C%222016111001%22%3A%22r139-01%22%2C%222016111101%22%3A%22r139-04%22%2C%222016112401%22%3A%22r140-01%22%2C%222016112501%22%3A%22r140-04%22%2C%222016120801%22%3A%22r141-02%22%2C%222016120901%22%3A%22r141-04%22%2C%222016122201%22%3A%22r142-02%22%2C%222016122301%22%3A%22r142-04%22%2C%222017010601%22%3A%22r143%22%2C%222017010701%22%3A%22r143-06%22%2C%222017012001%22%3A%22r144%22%2C%222017012101%22%3A%22r144-17%22%2C%222017020901%22%3A%22r145%22%2C%222017021001%22%3A%22r145-07%22%2C%222017022401%22%3A%22r146%22%2C%222017022501%22%3A%22r146-06%22%2C%222017030901%22%3A%22r147%22%2C%222017031001%22%3A%22r147-05%22%2C%222017032301%22%3A%22r148%22%2C%222017032401%22%3A%22r148-04%22%2C%222017040701%22%3A%22r149%22%2C%222017040801%22%3A%22r149-13%22%2C%222017042001%22%3A%22r150-01%22%2C%222017042101%22%3A%22r150-02%22%2C%222017050401%22%3A%22r151-01%22%2C%222017050501%22%3A%22r151-05%22%2C%222017052601%22%3A%22r152%22%2C%222017052701%22%3A%22r152-05%22%2C%222017060801%22%3A%22r153-01%22%2C%222017060901%22%3A%22r153-04%22%2C%222017062201%22%3A%22r154%22%2C%222017062301%22%3A%22r154-05%22%2C%222017070601%22%3A%22r155%22%2C%222017070701%22%3A%22r155-03%22%2C%222017072001%22%3A%22r156%22%2C%222017072101%22%3A%22r156-05%22%2C%222017080301%22%3A%22r157-01%22%2C%222017080401%22%3A%22r157-02%22%2C%222017081701%22%3A%22r158%22%2C%222017081801%22%3A%22r158-11%22%2C%222017083101%22%3A%22r159%22%2C%222017090101%22%3A%22r159-08%22%2C%222017091401%22%3A%22r160%22%2C%222017091501%22%3A%22r160-05%22%2C%222017092901%22%3A%22r161%22%2C%222017093001%22%3A%22r161-01%22%2C%222017101301%22%3A%22r162%22%2C%222017101401%22%3A%22r162-04%22%2C%222017102601%22%3A%22r163%22%2C%222017102701%22%3A%22r163-05%22%2C%222017110901%22%3A%22r164%22%2C%222017111001%22%3A%22r164-02%22%2C%222017112301%22%3A%22r165-01%22%2C%222017112401%22%3A%22r165-05%22%2C%222017120701%22%3A%22r166%22%2C%222017120801%22%3A%22r166-05%22%2C%222017122101%22%3A%22r167-01%22%2C%222017122201%22%3A%22r167-03%22%2C%222018010401%22%3A%22r168-02%22%2C%222018010501%22%3A%22r168-01%22%2C%222018011901%22%3A%22r169-01%22%2C%222018012001%22%3A%22r169-02%22%2C%222018020101%22%3A%22r170%22%2C%222018020201%22%3A%22r170-03%22%2C%222018021101%22%3A%22r171%22%2C%222018021201%22%3A%22r171-16%22%2C%222018030101%22%3A%22r172%22%2C%222018030201%22%3A%22r172-05%22%2C%222018031501%22%3A%22r173%22%2C%222018031601%22%3A%22r173-07%22%2C%222018032901%22%3A%22r174-02%22%2C%222018033001%22%3A%22r174-06%22%2C%222018041201%22%3A%22r175%22%2C%222018041301%22%3A%22r175-06%22%2C%222018042701%22%3A%22r176-03%22%2C%222018042801%22%3A%22r176-04%22%2C%222018051001%22%3A%22r177-01%22%2C%222018051101%22%3A%22r177-06%22%2C%222018052401%22%3A%22r178%22%2C%222018052501%22%3A%22r178-06%22%2C%222018060701%22%3A%22r179-02%22%2C%222018060801%22%3A%22r179-04%22%2C%222018062101%22%3A%22r180-01%22%2C%222018062201%22%3A%22r180-10%22%2C%222018070501%22%3A%22r181-01%22%2C%222018070601%22%3A%22r181-09%22%2C%222018072001%22%3A%22r182%22%2C%222018072101%22%3A%22r182-11%22%2C%222018080201%22%3A%22r183%22%2C%222018080301%22%3A%22r183-04%22%2C%222018081601%22%3A%22r184%22%2C%222018081701%22%3A%22r184-05%22%2C%222018083001%22%3A%22r185-01%22%2C%222018083101%22%3A%22r185-03%22%2C%222018091301%22%3A%22r186%22%2C%222018091401%22%3A%22r186-01%22%2C%222018092801%22%3A%22r187%22%2C%222018092901%22%3A%22r187-04%22%2C%222018101801%22%3A%22r188-02%22%2C%222018101901%22%3A%22r188-03%22%2C%222018110201%22%3A%22r189%22%2C%222018110301%22%3A%22r189-04%22%2C%222018111501%22%3A%22r190%22%2C%222018111601%22%3A%22r190-02%22%2C%222018112901%22%3A%22r191-02%22%2C%222018113001%22%3A%22r191%22%2C%222018121301%22%3A%22r192%22%2C%222018121401%22%3A%22r192-13%22%2C%222018122801%22%3A%22r193%22%2C%222018122901%22%3A%22r193-03%22%2C%222019011001%22%3A%22r194%22%2C%222019011101%22%3A%22r194-06%22%2C%222019012401%22%3A%22r195-01%22%2C%222019012501%22%3A%22r195-12%22%2C%222019021401%22%3A%22r196%22%2C%222019021501%22%3A%22r196-08%22%2C%222019022801%22%3A%22r196%22%2C%222019030101%22%3A%22r197-03%22%2C%222019031401%22%3A%22r198-01%22%2C%222019031501%22%3A%22r198-09%22%2C%222019032801%22%3A%22r199-01%22%2C%222019032901%22%3A%22r199-06%22%2C%222019041101%22%3A%22r200-01%22%2C%222019041201%22%3A%22r200-06%22%2C%222019042501%22%3A%22r121-01%22%2C%222019042601%22%3A%22r201-08%22%2C%222019050901%22%3A%22r202-05%22%2C%222019051001%22%3A%22r202-15%22%2C%222019052301%22%3A%22r203%22%2C%222019052401%22%3A%22r203-09%22%2C%222019060501%22%3A%22r204%22%2C%222019060601%22%3A%22r204-07%22%2C%222019062001%22%3A%22r205%22%2C%222019062101%22%3A%22r205-09%22%2C%222019070401%22%3A%22r206%22%2C%222019070501%22%3A%22r206-04%22%2C%222019071801%22%3A%22r207%22%2C%222019071901%22%3A%22r207-04%22%2C%222019080201%22%3A%22r208-02%22%2C%222019080301%22%3A%22r208-08%22%2C%222019081501%22%3A%22r210-02%22%2C%222019081601%22%3A%22r209-05%22%2C%222019082801%22%3A%22r210%22%2C%222019082901%22%3A%22r210-04%22%2C%222019091101%22%3A%22r211%22%2C%222019091201%22%3A%22r211-08%22%2C%222019092601%22%3A%22r212%22%2C%222019092701%22%3A%22r212-05%22%2C%222019101101%22%3A%22r213-01%22%2C%222019101201%22%3A%22r213-06%22%2C%222019102401%22%3A%22r214%22%2C%222019102501%22%3A%22r214-04%22%2C%222019110701%22%3A%22r215%22%2C%222019110801%22%3A%22r215-08%22%2C%222019112101%22%3A%22r216%22%2C%222019112201%22%3A%22r216-22%22%2C%222019120501%22%3A%22r217-03%22%2C%222019120602%22%3A%22r217-19%22%2C%222019121901%22%3A%22r219%22%2C%222019122001%22%3A%22r219-10%22%2C%222020010201%22%3A%22r219-02%22%2C%222020010301%22%3A%22r219-01%22%2C%222020011601%22%3A%22r220%22%2C%222020011701%22%3A%22r220-10%22%2C%222020021301%22%3A%22r221-01%22%2C%222020021401%22%3A%22r221-07%22%2C%222020022701%22%3A%22r222-01%22%2C%222020022801%22%3A%22r222-04%22%2C%222020031201%22%3A%22r223-01%22%2C%222020031301%22%3A%22r223-07%22%2C%222020032601%22%3A%22r224-01%22%2C%222020032701%22%3A%22r224-05%22%2C%222020040901%22%3A%22r225%22%2C%222020041001%22%3A%22r225-22%22%2C%222020042301%22%3A%22r226-02%22%2C%222020042401%22%3A%22r226-10%22%2C%222020050801%22%3A%22r227-01%22%2C%222020050901%22%3A%22r227-09%22%2C%222020052101%22%3A%22r228%22%2C%222020052201%22%3A%22r228-09%22%2C%222020060402%22%3A%22r229-01%22%2C%222020060501%22%3A%22r229-12%22%2C%222020061801%22%3A%22r230%22%2C%222020061901%22%3A%22r230-14%22%2C%222020070201%22%3A%22r231%22%2C%222020070301%22%3A%22r231-04%22%2C%222020071601%22%3A%22r232%22%2C%222020071701%22%3A%22r232-10%22%2C%222020073001%22%3A%22r233%22%2C%222020073101%22%3A%22r233-11%22%2C%222020081301%22%3A%22r234-01%22%2C%222020081401%22%3A%22r234-04%22%2C%222020082701%22%3A%22r235-01%22%2C%222020082801%22%3A%22r235-24%22%2C%222020091001%22%3A%22r236%22%2C%222020091101%22%3A%22r236-05%22%2C%222020092401%22%3A%22r237-02%22%2C%222020092501%22%3A%22r237-12%22%2C%222020100901%22%3A%22r238-01%22%2C%222020101001%22%3A%22r238-11%22%2C%222020102201%22%3A%22r239-03%22%2C%222020102301%22%3A%22r239-15%22%2C%222020110501%22%3A%22r240%22%2C%222020110601%22%3A%22r240-07%22%2C%222020111901%22%3A%22r241-06%22%2C%222020112001%22%3A%22r241-11%22%2C%222020120301%22%3A%22r242-01%22%2C%222020120401%22%3A%22r242-07%22%2C%222020121701%22%3A%22r243%22%2C%222020121801%22%3A%22r243-10%22%2C%222020123001%22%3A%22r244%22%2C%222020123101%22%3A%22r244-09%22%2C%222021011401%22%3A%22r245%22%2C%222021011501%22%3A%22r245-08%22%2C%222021012801%22%3A%22r245-05%22%2C%222021012901%22%3A%22r246-14%22%2C%222021021901%22%3A%22r247-01%22%2C%222021022001%22%3A%22r247-11%22%2C%222021030401%22%3A%22r248%22%2C%222021030501%22%3A%22r248-06%22%2C%222021031801%22%3A%22r249-02%22%2C%222021031901%22%3A%22r249-11%22%2C%222021040101%22%3A%22r250%22%2C%222021040202%22%3A%22r250-03%22%2C%222021041501%22%3A%22r251-01%22%2C%222021041601%22%3A%22r251-14%22%2C%222021042901%22%3A%22r252%22%2C%222021043001%22%3A%22r252-07%22%2C%222021051301%22%3A%22r253-01%22%2C%222021051401%22%3A%22r253-10%22%2C%222021052701%22%3A%22r254-02%22%2C%222021052801%22%3A%22r254-06%22%2C%222021061001%22%3A%22r255-01%22%2C%222021061101%22%3A%22r255-02%22%2C%222021062501%22%3A%22r256%22%2C%222021062601%22%3A%22r256-09%22%2C%222021070801%22%3A%22r257-01%22%2C%222021070901%22%3A%22r257-12%22%2C%222021072201%22%3A%22r258-01%22%2C%222021072301%22%3A%22r258-06%22%2C%222021080501%22%3A%22r259-01%22%2C%222021080601%22%3A%22r259-09%22%2C%222021081901%22%3A%22r260-01%22%2C%222021082001%22%3A%22r260-04%22%2C%222021090201%22%3A%22r261-01%22%2C%222021090301%22%3A%22r261-10%22%2C%222021091601%22%3A%22r262-01%22%2C%222021091701%22%3A%22r262-08%22%2C%222021092801%22%3A%22r263-02%22%2C%222021092901%22%3A%22r263-06%22%2C%222021101401%22%3A%22r264-02%22%2C%222021101501%22%3A%22r264-11%22%2C%222021102801%22%3A%22r265-04%22%2C%222021102901%22%3A%22r265-06%22%2C%222021111101%22%3A%22r266-02%22%2C%222021111201%22%3A%22r266-09%22%2C%222021112501%22%3A%22r267-02%22%2C%222021112601%22%3A%22r267-08%22%2C%222021120901%22%3A%22r268-01%22%2C%222021121001%22%3A%22r268-14%22%2C%222021122301%22%3A%22r269-01%22%2C%222021122401%22%3A%22r269-08%22%2C%222022010601%22%3A%22r270-01%22%2C%222022010701%22%3A%22r270-10%22%2C%222022012001%22%3A%22r271-01%22%2C%222022012101%22%3A%22r271-08%22%2C%222022021001%22%3A%22r272-01%22%2C%222022021101%22%3A%22r272-12%22%2C%222022022401%22%3A%22r273-01%22%2C%222022022501%22%3A%22r273-14%22%2C%222022031001%22%3A%22r274-02%22%2C%222022031101%22%3A%22r274-20%22%2C%222022040101%22%3A%22r275-05%22%2C%222022040201%22%3A%22r275-09%22%2C%222022041401%22%3A%22r276-01%22%2C%222022041501%22%3A%22r276-06%22%2C%222022042701%22%3A%22r277-01%22%2C%222022042801%22%3A%22r277-10%22%7D"
+    + "&cid=27"
+    + "&cur_ver=2022042801"
+    + "&stage=360"
+    + "&client="
+    + "&bind_open=0"
+    + "&fav_link=http%3A%2F%2Fsxd.wan.360.cn"
+    + "&pc_client_url="
+    + "&lucky_star_event=http%3A%2F%2Fapi.sxd.xd.com%2Fapi%2Fplayer_seventh_anniversary_data.php"
+    + "&verified_state=1"
+    + "&verified_url=http%3A%2F%2Fapi.sxd.xd.com%2Fapi%2Fverified.php%3Fplayer_name%3D126963832%26time%3D1651906107%26server_name%3Ds313.sxd.g.1360.com%26token%3D29449f87d8e2c10fb4efc37f95d2d329"
+    + "&xd_gm=1"
+    + "&eighth_anniversary=https%3A%2F%2Fh5.bolq.com%2Fh5%2F2019b"
+    + "&old_user=126963832"
+    + "&update_status=0"
+    + "&update_server_time=1651175087"
+        + "&publish=%E5%A4%A9%E9%81%93%E6%BC%AB%E6%BC%AB%EF%BC%8C%E9%80%86%E5%A4%A9%E8%80%8C%E7%94%9F%EF%BC%8C%E6%84%9F%E5%8F%97%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%8E%A9%E7%9A%84%E6%A8%AA%E7%89%88%E8%BF%87%E5%85%B3%E6%B8%B8%E6%88%8F360%E3%80%8A%E7%A5%9E%E4%BB%99%E9%81%93%E3%80%8B+%3Ca+href%3D%22http%3A%2F%2Fsxd.wan.360.cn%22+target%3D%22_blank%22%3E%E5%AE%98%E7%BD%91%3C%2Fa%3E+%3Ca+href%3D%22http%3A%2F%2Fbbs.360safe.com%2Fforum-324-1.html%22+target%3D%22_blank%22%3E%E8%AE%BA%E5%9D%9B%3C%2Fa%3E+%3Ca+href%3D%22http%3A%2F%2Fsxd.wan.360.cn%2Fpay.php%3Fqid%3D126963832%26server_id%3DS313%22+target%3D%22_blank%22%3E%E5%85%85%E5%80%BC%3C%2Fa%3E+%3Cbr%3E%E4%BA%92%E8%81%94%E7%BD%91%E6%B8%B8%E6%88%8F%E5%87%BA%E7%89%88%E7%89%A9ISBN%E5%8F%B7%EF%BC%9A978-7-89989-159-9%3Cbr%3E%E5%AE%A1%E6%89%B9%E6%96%87%E5%8F%B7%EF%BC%9A%E7%A7%91%E6%8A%80%E4%B8%8E%E6%95%B0%E5%AD%97%5B2011%5D208%3Cbr%3E%E6%96%87%E7%BD%91%E6%96%87%E5%8F%B7%EF%BC%9A%E6%B2%AA%E7%BD%91%E6%96%87%EF%BC%882014%EF%BC%890745-175%E5%8F%B7%3Cbr%3E%E6%96%87%E5%8C%96%E9%83%A8%E5%A4%87%E6%A1%88%E5%8F%B7%EF%BC%9A%E6%96%87%E7%BD%91%E6%B8%B8%E5%A4%87%E5%AD%97%5B2011%5DW-RPG089%E5%8F%B7%3Cbr%3E%E8%91%97%E4%BD%9C%E6%9D%83%E4%BA%BA%EF%BC%9A%E5%8E%A6%E9%97%A8%E5%85%89%E7%8E%AF%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%3Cbr%3E%E5%87%BA%E7%89%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E5%8E%A6%E9%97%A8%E6%B8%B8%E5%AE%B6%E7%BD%91%E7%BB%9C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+        + "&lucky_star_token=29449f87d8e2c10fb4efc37f95d2d329"
+        + "&activity_token=e74c9b4381fdc6ef3d8bd3b8c9ebee31"
+        + "&anniversary_web=https%3A%2F%2Factivity.bolq.com%2Fsxd_10th%3Fgameid%3D2%26player%3D126963832%26server%3D360_s313%26time%3D1651906107%26sign%3De74c9b4381fdc6ef3d8bd3b8c9ebee31"
+        + "&game_net_tag="
+        + "&qx_er_wei_ma_info_url=";
+    var params = {
+        flashvars: flashVars,
+        quality :  "high",
+        allowscriptaccess : "always",
+        wmode : "Opaque",
+        menu : "false",
+        bgcolor : "#000000"
+    };
+
+    var attributes = {
+        id   : "sxd",
+        name : "sxd",
+        wmode: "opaque"
+    };
+
+    swfobject.embedSWF(
+        swf, "webgame",
+        "100%", "100%",
+        "10.0.0",
+        "swfobject/expressInstall.swf",
+        false, params, attributes
+    );
+
+    //....................................flashplayer
+    var version = swfobject.getFlashPlayerVersion();
+	// if (!document.getElementById || version["major"] <= 0) 
+    if (version["major"] <= 0) 
+	{
+		alert("...flash Player............,..................,..............................!");
+		//window.location.href="https://sxd.xd.com/13810";
+		//window.location.href= "https://sxd.xd.com/13810";
+		window.open('https://sxd.xd.com/13810');
+	}
+</script>
+<div id="ext" style="display:none;height:1px;width:1px;">
+
+<!--<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/987748488/?value=0&amp;label=grhwCLDmwiAQiLH_1gM&amp;guid=ON&amp;script=0"/>-->
+
+<iframe style="display:none;border:none;" src="http://sxd.xd.com/baidu/sxd/conversion/"></iframe>
+
+</div></body>
+</html>

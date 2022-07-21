@@ -1,0 +1,106 @@
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <thread>
+
+#include <D:\boost_1_78_0\boost_1_78_0\boost/regex.hpp>
+#include <D:\boost_1_78_0\boost_1_78_0\boost/algorithm/string.hpp>
+#include <D:\boost_1_78_0\boost_1_78_0\boost/algorithm/string/regex.hpp>
+#include <D:\boost_1_78_0\boost_1_78_0\boost/lexical_cast.hpp>
+
+#include <D:\boost_1_78_0\boost_1_78_0\boost/format.hpp>
+
+#include "database.h"
+#include "sxd_web.h"
+#include "sxd_client.h"
+#include "common.h"
+#include "protocol.h"
+#include "sxd.h"
+
+sxd::sxd() {
+}
+
+sxd::~sxd() {
+}
+
+void sxd::run(std::string arg, bool auto_exit) {
+	system(("del /q /f log\\" + common::to_string(std::time(0) - 3 * 24 * 60 * 60, "%Y-%m-%d*")).c_str());
+	std::string user_ini = common::read_file("user.ini");
+	boost::regex user_regex("\\[(?<user_id>.*?)\\]\r\nurl=(?<url>.*?)\r\ncode=(?<user>.*?)\r\ntime=(?<_time>.*?)\r\nhash=(?<_hash>.*?)\r\ntime1=(?<login_time_sxd_xxxxxxxx>.*?)\r\nhash1=(?<login_hash_sxd_xxxxxxxx>.*?)\r\nversion=(?<version>.*?)\r\nname=(?<name>.*?)\r\n");
+	if (arg == "menu") {
+		int i = 0;
+		for (auto it = boost::sregex_iterator(user_ini.begin(), user_ini.end(), user_regex); it != boost::sregex_iterator(); it++)
+			common::log(boost::str(boost::format("%3d. %s") % (++i) % (*it)["name"]), -1, 0, 0);
+		common::log("请选择(输入0表示运行所有)：", -1, 0, 0);
+		std::getline(std::cin, arg);
+		sxd::run(arg, auto_exit);
+		return;
+	}
+	else if (arg == "login") {
+		sxd::login();
+	}
+}
+
+void sxd::login() {
+		std::string response_http_version;
+		unsigned int status_code;
+		std::string status_message;
+		std::string response_header;
+		std::string response_body;
+
+		auto users = db.get_all_users();
+		for (auto& user : users) {
+			try {
+				common::log(boost::str(boost::format("%1% [%2%]") % user["name"] % user["id"]));
+				std::string id = user["id"];
+				std::string host1 = user["host"];
+				std::string port1 = user["port"];
+				std::string url1 = user["url"];
+				std::string cookie1 = user["cookie"];
+
+				sxd_web web1;
+				web1.connect(host1, port1);
+				web1.service("GET", url1, "HTTP/1.1", "Cookie: " + cookie1 + "\r\n", "", response_http_version, status_code, status_message, response_header, response_body);
+				boost::regex location_regex("Location: https?://(.*?)/(.*?)\r\n");
+				boost::smatch match;
+				if (!regex_search(response_header, match, location_regex))
+					throw std::runtime_error("[Location]匹配出错");
+				std::string host2(match[1]);
+				std::string port2("80");
+				std::string url2("/" + match[2]);
+
+				sxd_web web2;
+				web2.connect(host2, port2);
+				web2.service("GET", url2, "HTTP/1.1", "", "", response_http_version, status_code, status_message, response_header, response_body);
+				std::list<std::string> cookies;
+				boost::regex set_cookie_regex("Set-Cookie: (.*?);");
+
+				if (!boost::regex_search(response_header, match, boost::regex("Set-Cookie: user=(.*?);")))
+					throw std::runtime_error("[Set-Cookie]匹配出错");
+				std::string code = match[1];
+				if (!boost::regex_search(response_header, match, boost::regex("Set-Cookie: _time=(.*?);")))
+					throw std::runtime_error("[Set-Cookie]匹配出错");
+				std::string time = match[1];
+				if (!boost::regex_search(response_header, match, boost::regex("Set-Cookie: _hash=(.*?);")))
+					throw std::runtime_error("[Set-Cookie]匹配出错");
+				std::string hash = match[1];
+				if (!boost::regex_search(response_header, match, boost::regex("Set-Cookie: login_time_sxd_xxxxxxxx=(.*?);")))
+					throw std::runtime_error("[Set-Cookie]匹配出错");
+				std::string time1 = match[1];
+				if (!boost::regex_search(response_header, match, boost::regex("Set-Cookie: login_hash_sxd_xxxxxxxx=(.*?);")))
+					throw std::runtime_error("[Set-Cookie]匹配出错");
+				std::string hash1 = match[1];
+
+				std::string user_ini = common::read_file("user.ini");
+				boost::regex user_regex("\\[" + id + "\\]\r\nurl=(?<url>.*?)\r\ncode=(?<user>.*?)\r\ntime=(?<_time>.*?)\r\nhash=(?<_hash>.*?)\r\ntime1=(?<login_time_sxd_xxxxxxxx>.*?)\r\nhash1=(?<login_hash_sxd_xxxxxxxx>.*?)\r\nname=(?<name>.*?)\r\n");
+				std::string user_replace("[" + id + "]\r\nurl=$1\r\ncode=" + code + "\r\ntime=" + time + "\r\nhash=" + hash + "\r\ntime1=" + time1 + "\r\nhash1=" + hash1 + "\r\nname=$7\r\n");
+				user_ini = boost::regex_replace(user_ini, user_regex, user_replace);
+				common::write_file("user.ini", user_ini);
+			}
+			catch (const std::exception& ex) {
+				common::log(boost::str(boost::format("发现错误(login)：%1%") % ex.what()));
+			}
+			std::this_thread::sleep_for(std::chrono::seconds(1));
+		} 
+	}

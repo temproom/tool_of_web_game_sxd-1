@@ -1,0 +1,18 @@
+一：
+sxd_client_st_practice_room.cpp
+第24行
+int room_capcity[6] = { 0, 6, 7, 8, 10, 12 };
+由于room_capcity[]初始化是数组，room_capcity则表示的是指针
+所以在[room_capcity](const Json::Value& x)变为[&room_capcity](const Json::Value& x)
+
+二：
+sxd.cpp
+第30行文件路径用\\
+把common::read_file("D:\随心\sxd聊天\user.ini");
+改为common::read_file("D:\\随心\\sxd聊天\\user.ini");
+
+三：
+正则表达式：
+①：regex_search	寻找字符序列中的子串中与正则表达式匹配的结果,在找到第一个匹配的结果后就会停止查找
+
+②：regex_iterator	迭代器，用来匹配所有 的子串 

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00EC252A-BFAB-475E-A70A-5454E2F38B98}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sxd聊天</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <IncludePath>D:\sqlite3;D:\json\jsoncpp-1.9.5\jsoncpp-1.9.5\include;D:\随心\sxd聊天\sxd聊天;$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\boost_1_78_0\boost_1_78_0</IncludePath>
+    <LibraryPath>D:\boost_1_78_0\boost_1_78_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <IncludePath>D:\sqlite3;D:\json\jsoncpp-1.9.5\jsoncpp-1.9.5\include;D:\随心\sxd聊天\sxd聊天;$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\boost_1_78_0\boost_1_78_0</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\随心\sxd聊天\sxd聊天;D:\boost_1_78_0\boost_1_78_0\</AdditionalIncludeDirectories>
+      <AdditionalOptions> /D "_CRT_SECURE_NO_WARNINGS" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\boost_1_78_0\boost_1_78_0\libs</AdditionalLibraryDirectories>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\随心\sxd聊天\sxd聊天;D:\boost_1_78_0\boost_1_78_0\</AdditionalIncludeDirectories>
+      <AdditionalOptions> /D "_CRT_SECURE_NO_WARNINGS" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\boost_1_78_0\boost_1_78_0\libs</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="database.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="iconv.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="sqlite3ext.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="sxd.h" />
+    <ClInclude Include="sxd_client.h" />
+    <ClInclude Include="sxd_web.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="database.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="iconv.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="jsoncpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="localcharset.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="protocol.cpp" />
+    <ClCompile Include="shell.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sxd.cpp" />
+    <ClCompile Include="sxd_client.cpp" />
+    <ClCompile Include="sxd_client_assistant.cpp" />
+    <ClCompile Include="sxd_client_awake.cpp" />
+    <ClCompile Include="sxd_client_bai_lian_qian_kun.cpp" />
+    <ClCompile Include="sxd_client_beelzebub_trials.cpp" />
+    <ClCompile Include="sxd_client_bug.cpp" />
+    <ClCompile Include="sxd_client_chaos_equipment.cpp" />
+    <ClCompile Include="sxd_client_chat.cpp" />
+    <ClCompile Include="sxd_client_coin_mission.cpp" />
+    <ClCompile Include="sxd_client_courtyard_pet.cpp" />
+    <ClCompile Include="sxd_client_dance.cpp" />
+    <ClCompile Include="sxd_client_dice_messenger.cpp" />
+    <ClCompile Include="sxd_client_dragonball.cpp" />
+    <ClCompile Include="sxd_client_dunhuang_treasure.cpp" />
+    <ClCompile Include="sxd_client_email.cpp" />
+    <ClCompile Include="sxd_client_equipment.cpp" />
+    <ClCompile Include="sxd_client_faction.cpp" />
+    <ClCompile Include="sxd_client_farm.cpp" />
+    <ClCompile Include="sxd_client_fate.cpp" />
+    <ClCompile Include="sxd_client_find_immortal.cpp" />
+    <ClCompile Include="sxd_client_find_treasure.cpp" />
+    <ClCompile Include="sxd_client_fish.cpp" />
+    <ClCompile Include="sxd_client_five_elements_laba.cpp" />
+    <ClCompile Include="sxd_client_get_peach.cpp" />
+    <ClCompile Include="sxd_client_gift.cpp" />
+    <ClCompile Include="sxd_client_hero_mission.cpp" />
+    <ClCompile Include="sxd_client_hide_treasure_map.cpp" />
+    <ClCompile Include="sxd_client_hunt_demon.cpp" />
+    <ClCompile Include="sxd_client_item.cpp" />
+    <ClCompile Include="sxd_client_library.cpp" />
+    <ClCompile Include="sxd_client_link_fate.cpp" />
+    <ClCompile Include="sxd_client_lucky_shop.cpp" />
+    <ClCompile Include="sxd_client_lucky_super_number.cpp" />
+    <ClCompile Include="sxd_client_marry.cpp" />
+    <ClCompile Include="sxd_client_marry_home.cpp" />
+    <ClCompile Include="sxd_client_memoirs.cpp" />
+    <ClCompile Include="sxd_client_nine_regions.cpp" />
+    <ClCompile Include="sxd_client_partner_link.cpp" />
+    <ClCompile Include="sxd_client_pet_animal.cpp" />
+    <ClCompile Include="sxd_client_pot_world.cpp" />
+    <ClCompile Include="sxd_client_quest.cpp" />
+    <ClCompile Include="sxd_client_regression.cpp" />
+    <ClCompile Include="sxd_client_release_welfare.cpp" />
+    <ClCompile Include="sxd_client_research.cpp" />
+    <ClCompile Include="sxd_client_rob_money.cpp" />
+    <ClCompile Include="sxd_client_roll_cake.cpp" />
+    <ClCompile Include="sxd_client_rune.cpp" />
+    <ClCompile Include="sxd_client_saint_area.cpp" />
+    <ClCompile Include="sxd_client_sa_super_sport.cpp" />
+    <ClCompile Include="sxd_client_sa_take_bible.cpp" />
+    <ClCompile Include="sxd_client_send_flower.cpp" />
+    <ClCompile Include="sxd_client_server_chat_room.cpp" />
+    <ClCompile Include="sxd_client_spring_carnival.cpp" />
+    <ClCompile Include="sxd_client_st_altar.cpp" />
+    <ClCompile Include="sxd_client_st_arena.cpp" />
+    <ClCompile Include="sxd_client_st_big_turntable.cpp" />
+    <ClCompile Include="sxd_client_st_daoyuan_shop.cpp" />
+    <ClCompile Include="sxd_client_st_mine.cpp" />
+    <ClCompile Include="sxd_client_st_practice_room.cpp" />
+    <ClCompile Include="sxd_client_st_super_sport.cpp" />
+    <ClCompile Include="sxd_client_st_take_bible.cpp" />
+    <ClCompile Include="sxd_client_st_union.cpp" />
+    <ClCompile Include="sxd_client_sunday_fruit.cpp" />
+    <ClCompile Include="sxd_client_super_sport.cpp" />
+    <ClCompile Include="sxd_client_super_town.cpp" />
+    <ClCompile Include="sxd_client_three_anniversary_signIn.cpp" />
+    <ClCompile Include="sxd_client_town.cpp" />
+    <ClCompile Include="sxd_client_training.cpp" />
+    <ClCompile Include="sxd_client_travel_event.cpp" />
+    <ClCompile Include="sxd_client_wager_shop.cpp" />
+    <ClCompile Include="sxd_client_wish_pool.cpp" />
+    <ClCompile Include="sxd_client_wish_tower.cpp" />
+    <ClCompile Include="sxd_web.cpp" />
+    <ClCompile Include="sxd聊天.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

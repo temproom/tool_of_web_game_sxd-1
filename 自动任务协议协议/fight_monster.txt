@@ -1,0 +1,10 @@
+protected function loadData() : void
+      {
+         _requested = true;
+         _data.call(Mod_Mission_Base.fight_monster,this.fightMonsterCallback,[this.monsterTeamId,0]);
+         this._tmpCount = 0;
+         this.addTimeOut();
+      }
+
+
+_data.call(Mod_Mission_Base.fight_monster,this.fightMonsterCallback,[this.monsterTeamId,0])

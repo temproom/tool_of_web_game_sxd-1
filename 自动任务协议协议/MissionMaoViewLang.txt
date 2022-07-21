@@ -1,0 +1,66 @@
+package com.lang.client.com.views
+{
+   public class MissionMapViewLang
+   {
+      
+      public static const Loading:String = "正在准备进入副本";
+      
+      public static const Fall:String = "可能获得";
+      
+      public static const Surplus:String = "剩余$<1>个怪物";
+      
+      public static const Win:String = "你已经击败所有的怪物";
+      
+      public static const Chest:String = "打开宝箱，获取奖励";
+      
+      public static const LackStamina:String = "体力不足无法进入副本";
+      
+      public static const YesLabel:String = "再次挑战";
+      
+      public static const YesLabelTip:String = "再次挑战当前副本";
+      
+      public static const NoLabel:String = "退出";
+      
+      public static const NoLabelTip:String = "退出副本，回到城镇";
+      
+      public static const Again:String = "是否再次挑战当前副本?";
+      
+      public static const Full:String = "包裹已满";
+      
+      public static const NoOpen:String = "副本内不能打开";
+      
+      public static const WuHun:String = "武魂";
+      
+      public static const HuoDeTongQian:String = "获得铜钱$<1>";
+      
+      public static const HuoDeYueLi:String = "获得阅历$<1>";
+      
+      public static const HuoDeYuanBao:String = "获得元宝$<1>";
+      
+      public static const MustPassFirst:String = "需战胜一只怪物";
+      
+      public static const TrunkChallengeLimit:String = "支线只可挑战一次";
+      
+      public static const NO_BOX_TO_OPEN:String = "没有宝箱未领取";
+      
+      public static const PickUpFailure:String = "领取失败";
+      
+      public static const SecretEnterInfo:String = "发现秘境入口，是否进入？";
+      
+      public static const WaitForLuckWheel:String = "正在抽奖，请稍等";
+      
+      public static const GainKeySuccess:String = "成功拾取宝箱钥匙";
+      
+      public static const IllusoryMsg1:String = "请找出与其他怪物有明显不同的怪物，选对即可领取奖励！";
+      
+      public static const IllusoryMsg2:String = "大侠真是火眼金睛！请领取奖励吧";
+      
+      public static const MiJingShiZhe:String = "秘境使者";
+       
+      
+      public function MissionMapViewLang()
+      {
+         super();
+      }
+   }
+}
